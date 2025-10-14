@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: room-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/hostal_rooms
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8081
+
+# Para uso en JwtService
+jwt:
+  secret: "586E3272357538782F413F4428472B4B6250655368566B597033733676397924"
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
