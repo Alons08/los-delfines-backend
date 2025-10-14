@@ -20,8 +20,7 @@ public class RoomType {
     private String name;
 
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "rate_id",nullable = false)
-    private  Rate rate;
+    @Column(name = "rate_id", nullable = false)
+    private Long rateId;    // 🔁 Simple (solo ID, no objeto)
 
 }
