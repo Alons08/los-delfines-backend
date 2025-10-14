@@ -33,6 +33,16 @@
             "projectName": "discovery-server",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HabitacionServiceApplication<habitacion-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.alocode.habitacion_service.HabitacionServiceApplication",
+            "projectName": "habitacion-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
