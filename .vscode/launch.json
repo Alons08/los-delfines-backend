@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UsuarioServiceApplication",
+            "request": "launch",
+            "mainClass": "com.alocode.usuario_service.UsuarioServiceApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UsuarioServiceApplication<usuario-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

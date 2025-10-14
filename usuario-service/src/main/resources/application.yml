@@ -1,11 +1,13 @@
 spring:
   application:
     name: usuario-service
+
   datasource:
     url: jdbc:mysql://localhost:3306/los_delfines_ms_usuario
     username: root
     password: Alons08
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,10 +16,21 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${SPRING_MAIL_USERNAME}
+    password: ${SPRING_MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
 server:
   port: 8081
 
-# Para uso en JwtService
 jwt:
   secret: "586E3272357538782F413F4428472B4B6250655368566B597033733676397924"
 
