@@ -13,12 +13,15 @@ public class RoomType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "room_type_id")
     private  Long id;
 
-    @Column(nullable = false , length = 80)
+    @Column(name = "room_type_name", nullable = false , length = 80)
     private String name;
 
 
-    private  String description;
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "rate_id",nullable = false)
+    private  Rate rate;
 
 }
