@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RoomServiceApplication",
+            "request": "launch",
+            "mainClass": "com.alocode.room_service.RoomServiceApplication",
+            "projectName": "com.alocode-usuario-service"
+        },
+        {
+            "type": "java",
             "name": "UsuarioServiceApplication",
             "request": "launch",
             "mainClass": "com.alocode.usuario_service.UsuarioServiceApplication"
